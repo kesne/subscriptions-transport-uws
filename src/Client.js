@@ -201,7 +201,6 @@ export default class Client {
         return;
       }
 
-      // console.log('MSG', JSON.stringify(parsedMessage, null, 2));
       switch (parsedMessage.type) {
 
         case SUBSCRIPTION_SUCCESS:

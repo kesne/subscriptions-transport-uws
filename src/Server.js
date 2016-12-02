@@ -63,7 +63,6 @@ export default class Server {
   }
 
   onMessage(ws, data, connectionSubscriptions) {
-    console.log(data);
     let parsedMessage;
     try {
       parsedMessage = JSON.parse(data);
