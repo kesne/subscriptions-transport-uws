@@ -2,6 +2,10 @@
 
 A GraphQL websocket server and client to facilitate GraphQL subscriptions. Based on [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), built on [µWS](https://github.com/uWebSockets/uWebSockets).
 
+## Importing
+
+Importing the client and the server modules are done separately.
+
 ## Client
 ### `Constructor(url, options)`
 - `url: string` : url that the client will connect to
