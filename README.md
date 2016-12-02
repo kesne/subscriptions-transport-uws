@@ -1,5 +1,3 @@
-[![npm version](https://badge.fury.io/js/subscriptions-transport-ws.svg)](https://badge.fury.io/js/subscriptions-transport-ws) [![GitHub license](https://img.shields.io/github/license/apollostack/subscriptions-transport-ws.svg)](https://github.com/apollostack/subscriptions-transport-ws/blob/license/LICENSE)
-
 # subscriptions-transport-uws
 
 A GraphQL websocket server and client to facilitate GraphQL subscriptions. Based on [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), built on [µWS](https://github.com/uWebSockets/uWebSockets).
