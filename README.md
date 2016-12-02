@@ -4,7 +4,14 @@ A GraphQL websocket server and client to facilitate GraphQL subscriptions. Based
 
 ## Importing
 
-Importing the client and the server modules are done separately.
+Importing the client and the server modules are done separately from the `lib/` directory.
+
+```js
+import Client from 'subscriptions-transport-uws/lib/Client';
+import Server from 'subscriptions-transport-uws/lib/Server';
+```
+
+Importing the main module is not supported and will throw an error.
 
 ## Client
 ### `Constructor(url, options)`
