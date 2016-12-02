@@ -1,6 +1,6 @@
 {
   "name": "subscriptions-transport-uws",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A websocket transport for GraphQL subscriptions (based on uws)",
   "main": "lib/index.js",
   "directories": {
