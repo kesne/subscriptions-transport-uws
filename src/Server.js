@@ -13,7 +13,7 @@ import {
 } from './constants';
 
 export default class Server {
-  constructor(options, httpServer) {
+  constructor(options, httpServer, serverOptions) {
     const { subscriptionManager, onSubscribe, keepAlive } = options;
 
     if (!subscriptionManager) {
@@ -24,13 +24,13 @@ export default class Server {
     this.onSubscribe = onSubscribe;
 
     // init and connect websocket server to http
-    this.wsServer = new WebSocketServer({
+    this.wsServer = new WebSocketServer(Object.assign(serverOptions, {
       server: httpServer,
       // TODO: Origin verification.
       verifyClient: ({ req }) => (
         (req.headers['sec-websocket-protocol'] || '').split(', ').indexOf(GRAPHQL_SUBSCRIPTIONS) !== -1
       ),
-    });
+    }));
 
     this.wsServer.on('connection', (ws) => {
       // Send regular keep alive messages if keepAlive is set
